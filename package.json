@@ -1,4 +1,7 @@
 {
+  "name": "harday",
+  "description": "Aplicação web para agendamento para corte de cabelo.",
+  "author": "André Santiago Hellmann",
   "scripts": {
     "serve": "json-server --watch server.json --port 3333"
   },
