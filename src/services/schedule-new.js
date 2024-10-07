@@ -2,5 +2,17 @@ import { apiConfig } from "./api-config";
 
 export async function scheduleNew({ id, name, when }) {
   try {
-  } catch (error) {}
+    await fetch(`${apiConfig.baseURL}/schedules`, {
+      method: "Post",
+      headers: {
+        "Content-type": "application/json",
+      },
+      body: JSON.stringify({ id, name, when }),
+    });
+
+    alert("Agendamento realizado com sucesso!");
+  } catch (error) {
+    console.log(error);
+    alert("Não foi possível agendar. Tente novamente mais tarde.");
+  }
 }
