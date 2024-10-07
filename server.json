@@ -1,3 +1,9 @@
 {
-  "schedules": []
+  "schedules": [
+    {
+      "id": 1728328689840,
+      "name": "André Santiago",
+      "when": "2024-10-07T20:00:00.000Z"
+    }
+  ]
 }
